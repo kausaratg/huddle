@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+main{
+    padding:0px 3rem ;
+}
+.element{
+    background: url(images/bg-hero-desktop.svg);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0.5rem;
+}
+header img{
+    width: 10rem;
+}
+header button{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    border-radius: 15px;
+    width: 8rem;
+    padding: 0.5rem;
+}
+.top{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.top img{
+    width: 40rem;
+    height: 28rem;
+}
+.one{
+    margin-top: 5rem;
+    padding-right: 2rem;
+}
+.one h2{
+    font-size: 32px;
+    line-height: 45px;
+}
+.one p{
+    margin-top: 20px;
+    line-height: 25px
+}
+.one button{
+    background-color: rgb(191, 9, 97);
+    border: 1px solid rgb(246, 43, 77);
+    color: white;
+    width: 12rem;
+    margin: 1rem 2rem;
+    height: 2rem;
+    border-radius: 15px;   
+}
+
+.grow, .flow, .users{
+   display: flex;
+   border: 1px solid gray;
+   justify-content: space-between;
+   margin-top: 2rem;
+   width: 100%;
+}
+.grow img, .flow img, .users img{
+    width: 30%;
+    margin: 1rem 3rem;
+}
+.text{
+    padding: 2rem;
+    width: 40%;
+    margin-top: 6rem;
+}
+.text h3{
+    margin-bottom: 1rem;
+}
+.card{
+    width: 35rem;
+    background-color: rgb(248, 241, 241);
+    height: 8rem;
+    text-align: center;
+    padding-top: 5rem;
+    position: relative;
+    top: 5rem;
+    left: 25%;
+}
+.card button{
+    margin-top: 2rem;
+    width: 15rem;
+    height: 3em;
+    color: white;
+    background-color: rgb(236, 79, 105);
+    border: 1px solid rgb(236, 79, 105);
+    border-radius: 19px;
+}
+footer{
+    display: flex;
+    background-color: rgb(13, 13, 38);
+    color: white;
+    padding: 9rem 3rem 2rem 3rem;   
+    font-size: 15px;
+    /* position: absolute; */
+}
+#huddle{
+    width: 9rem;
+}
+.first{
+    width: 20rem;
+    line-height: 40px;
+}
+.second{
+    width: 20rem;
+    line-height: 40px;
+    margin: 3rem 0rem 0rem 10rem;
+}
+.third{
+    width: 20rem;
+    line-height: 40px;
+    margin: 3rem 0rem; 
+}
+@media screen and (max-width: 900px){
+    .card{
+        left: 20%;
+    }
+    footer{
+        width: 120vw;
+    }
+    .grow, .flow, .users{
+        width: 120vw ;
+    }
+}
+@media screen and (max-width:750px){
+    .grow, .flow, .users{
+        display: block;
+        text-align: center;
+        width: 300vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card{
+        left: 30%;
+    }
+    footer{
+        display: block;
+        width: 300vw;
+        font-size: 17px;
+        text-align: center;
+    }
+    .text{
+        padding: 0px;
+        margin-left: 30%;
+    }
+    .first, .second, .third{
+        margin-left: 30%;
+    }
+}
+
